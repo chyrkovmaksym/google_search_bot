@@ -38,6 +38,7 @@ bot.on('photo', async (msg) => {
 });
 
 bot.on('text', async (msg) => {
+  console.log('request');
   const chatId = msg.chat.id;
   const text = msg.text;
   const name = msg.chat.first_name;
