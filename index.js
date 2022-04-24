@@ -3,6 +3,9 @@ const google = require('googlethis');
 const fs = require('fs');
 const Tesseract = require('tesseract.js');
 const { TOKEN } = require('./config');
+const express = require('express');
+const PORT = process.env.PORT || 5000;
+express().listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 const bot = new TelegramApi(TOKEN, { polling: true });
 
